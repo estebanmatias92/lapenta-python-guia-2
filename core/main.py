@@ -16,9 +16,12 @@ OPTIONS = range(1, len(get_exercises_list()) + 1)
 #
 #   Main loop for menu
 #
-def init_app(options):
+def init_app(options):    
     # Emulate a do-while loop, this always is going to execute at least one time
     while True:
+        # Clear console
+        os.system("clear")
+
         # Show all the exercise options
         print_options(options)
 
@@ -34,6 +37,6 @@ def init_app(options):
 
         # Launch the exercise function
         launch_exercise(option)
-
-    # Clear terminal after ending the program
+    
+    # Clear console after finish the program
     os.system("clear")
