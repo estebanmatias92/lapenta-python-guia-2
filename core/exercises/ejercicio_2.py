@@ -12,7 +12,7 @@ km = input("Ingresar kilometros: ")
 print("")
 
 if km.isnumeric() and int(km) > 0:
-    miles = int(int(km) / 0.6214)
+    miles = int(int(km) * 0.6214)
 
     print(f"Kilometros: {km}")
     print(f"Millas: {miles}")
