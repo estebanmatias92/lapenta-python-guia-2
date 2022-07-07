@@ -1,16 +1,22 @@
-
-print("4. Escribir un programa para calcular los números primos desde 1 hasta el valor ingresado por el usuario."
-    + "\n\t • Si el usuario ingresa un número inferior a 2, imprima un mensaje de error."
-    + "\n\t • Para cualquier número mayor de 2, realizar ciclos para determinar cuáles son esos números primos."
+print(
+    "4. Mostrar en forma ascendente y descendente los números naturales existentes en un "
+    + "determinado rango \n"
+    + "Ejemplo: A=5 y B=12 \n"
+    + "Salida ascendente: 5 - 6 - 7 - 8 - 9 - 10 - 11 - 12 \n"
+    + "Salida descendente: 12 - 11 - 10 - 9 - 8 - 7 - 6"
 )
 print("")
 
 
-range_limit = int(input("Ingresar valor numerico: "))
+MIN = int(input("Ingresar mínimo: "))
+MAX = int(input("Ingresar máximo: "))
 
 print("")
 
-if range_limit < 2:
-    print("No se puede encontrar un numero primo menor a 2")
+if MIN == MAX:
+    print("El mínimo y el máximo son iguales")
+elif MIN > MAX:
+    print("El mínimo es superior al máximo")
 else:
-    print("Correcto!!!")
+    print("Secuencia ascendente: ", [elem for elem in range(MIN, MAX + 1)])
+    print("Secuencia descendente: ", [elem for elem in range(MAX, MIN - 1, -1)])

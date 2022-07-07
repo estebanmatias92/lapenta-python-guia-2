@@ -1,17 +1,16 @@
-
-print("1. Convertir kilómetros a millas " 
-    + "Escribir un programa para convertir una distancia en kilómetros en una distancia en millas. "
-    + "Ingrese una distancia en Km usando la función input(). Convierta el valor devuelto por la "
-    + "función input() a un entero. Realice la conversión dividiendo los kilómetros por 0.6214. Imprima "
-    + "un mensaje diciéndole al usuario cuáles son las millas correspondientes."
+print(
+    "5. Construye programa en C que, al recibir como dato el precio de un producto importado, "
+    + "incremente 35%% el mismo, si es superior a $50,500 y que además escriba el nuevo precio del "
+    + "producto. "
 )
 print("")
 
 
-km = int(input("Ingresar kilometros: "))
-miles = int(km/0.6214)
+price = int(input("Ingresar precio producto: "))
 
 print("")
 
-print(f"Kilometros: {km}")
-print(f"Millas: {miles}")
+if price > 50000:
+    price = price * 1.35
+
+print(f"Precio del producto: {price}")

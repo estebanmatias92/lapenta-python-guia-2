@@ -1,20 +1,18 @@
+from lib.math.math import sieve_of_eratosthenes
 
-print("3. Modifique el ejercicio anterior y verifique que el usuario haya ingresado una distancia positiva "
-    + "(es decir, no puede ingresar un número negativo), además verificar que la entrada sea un "
-    + "número, si no es un número no debe hacer nada, de lo contrario, convierta la distancia a millas. "
-    + "(Utilizar funcion isnumeric() solo es para enteros)."
+print(
+    "3. Escribir un programa para calcular los números primos desde 1 hasta el valor ingresado por el usuario."
+    + "\n\t • Si el usuario ingresa un número inferior a 2, imprima un mensaje de error."
+    + "\n\t • Para cualquier número mayor de 2, realizar ciclos para determinar cuáles son esos números primos."
 )
 print("")
 
 
-km = input("Ingresar kilometros: ")
+number = int(input("Ingresar valor numerico: "))
 
 print("")
 
-if km.isnumeric() and int(km) > 0:
-    miles = int(int(km) / 0.6214)
-
-    print(f"Kilometros: {km}")
-    print(f"Millas: {miles}")
-else: 
-    print("El valor ingresado es invalido")
+if number < 2:
+    print("No se puede encontrar un numero primo menor a 2")
+else:
+    print("Lista de números primos: ", [elem for elem in sieve_of_eratosthenes(number)])

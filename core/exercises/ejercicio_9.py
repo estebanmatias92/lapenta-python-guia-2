@@ -1,17 +1,24 @@
-
-print("1. Convertir kilómetros a millas " 
-    + "Escribir un programa para convertir una distancia en kilómetros en una distancia en millas. "
-    + "Ingrese una distancia en Km usando la función input(). Convierta el valor devuelto por la "
-    + "función input() a un entero. Realice la conversión dividiendo los kilómetros por 0.6214. Imprima "
-    + "un mensaje diciéndole al usuario cuáles son las millas correspondientes."
+print(
+    "9. Realizar una aplicación que realice la siguiente figura: "
+    + "\n\t0 B N B N B N B"
+    + "\n\tB 0 B N B N B N"
+    + "\n\tN B 0 B N B N B"
+    + "\n\tB N B 0 B N B N"
+    + "\n\tN B N B 0 B N B"
+    + "\n\tB N B N B 0 B N"
+    + "\n\tN B N B N B 0 B"
+    + "\n\tB N B N B N B 0"
 )
 print("")
 
 
-km = int(input("Ingresar kilometros: "))
-miles = int(km/0.6214)
+secuence = ["0", "B", "N", "B", "N", "B", "N", "B"]
 
-print("")
+# Rotates a list one time, (n) amount of positions
+def rotate(my_list, n):
+    return my_list[-n:] + my_list[:-n]
 
-print(f"Kilometros: {km}")
-print(f"Millas: {miles}")
+
+# Rotate the secuencia 8 times
+for i in range(0, 8):
+    print(rotate(secuence, i))

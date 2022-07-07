@@ -1,17 +1,23 @@
-
-print("1. Convertir kilómetros a millas " 
-    + "Escribir un programa para convertir una distancia en kilómetros en una distancia en millas. "
-    + "Ingrese una distancia en Km usando la función input(). Convierta el valor devuelto por la "
-    + "función input() a un entero. Realice la conversión dividiendo los kilómetros por 0.6214. Imprima "
-    + "un mensaje diciéndole al usuario cuáles son las millas correspondientes."
+print(
+    "6. Elabore un programa que pida un número del 1 al 7 y diga el día de la semana correspondiente."
 )
 print("")
 
+week = {
+    1: "Domingo",
+    2: "Lunes",
+    3: "Martes",
+    4: "Miercoles",
+    5: "Jueves",
+    6: "Viernes",
+    7: "Sabado",
+}
 
-km = int(input("Ingresar kilometros: "))
-miles = int(km/0.6214)
+num = int(input("Ingresar numero de la semana: "))
 
 print("")
 
-print(f"Kilometros: {km}")
-print(f"Millas: {miles}")
+if num < 1 or num > 7:
+    print("El número no pertenece a un día de la semana")
+else:
+    print(f"Día: {week[num]}")
