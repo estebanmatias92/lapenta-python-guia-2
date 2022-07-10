@@ -1,5 +1,5 @@
-
-print("1. Convertir kilómetros a millas " 
+print(
+    "1. Convertir kilómetros a millas "
     + "Escribir un programa para convertir una distancia en kilómetros en una distancia en millas. "
     + "Ingrese una distancia en Km usando la función input(). Convierta el valor devuelto por la "
     + "función input() a un entero. Realice la conversión dividiendo los kilómetros por 0.6214. Imprima "
@@ -9,7 +9,7 @@ print("")
 
 
 km = int(input("Ingresar kilometros: "))
-miles = int(km/0.6214)
+miles = int(km * 0.6214)
 
 print("")
 
