@@ -1,4 +1,4 @@
-from lib.math.math import sieve_of_eratosthenes
+from helpers.math.math import sieve_of_eratosthenes
 
 print(
     "3. Escribir un programa para calcular los números primos desde 1 hasta el valor ingresado por el usuario."
